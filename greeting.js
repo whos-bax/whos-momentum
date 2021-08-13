@@ -24,7 +24,7 @@ function askForName() {
 function painGreeting(text) {
     form.classList.remove(SHOWING_CL)
     greeting.classList.add(SHOWING_CL)
-    greeting.innerText = `Hello ${text}`
+    greeting.innerText = `반갑습니다, ${text}님`
 }
 function loadName() {
     const currentUser = localStorage.getItem(USER_LS)

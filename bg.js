@@ -9,11 +9,13 @@ function paintImage(imgNumber) {
     body.appendChild(image)
     // image.addEventListener("loadend", handleImgLoad)
 }
+
 function genRandom() {
     const number = Math.floor(Math.random() * IMG_NUMBER);
     return number;
 
 }
+
 function init() {
     const randomNumber = genRandom();
     paintImage(randomNumber);
