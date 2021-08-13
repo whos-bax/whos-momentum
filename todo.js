@@ -1,6 +1,8 @@
 const toDoForm = document.querySelector('.js-toDoForm'),
     toDoInput = toDoForm.querySelector('input'),
-    toDoList = document.querySelector('.js-toDoList');
+    toDoList = document.querySelector('.js-toDoList'),
+    toDoModal = document.querySelector('.to-do');
+    
 
 const TODOS_LS = 'toDos';
 
@@ -50,7 +52,11 @@ function handleSubmit(event) {
     toDoInput.value = '';
 }
 
-
+function toDoModalShow() {
+    toDoModal.addEventListener('click', function () {
+        toDoModal.style.display = 'block';
+    })
+}
 
 function loadToDos() {
     const loadedToDos = localStorage.getItem(TODOS_LS);

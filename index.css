@@ -13,6 +13,7 @@ body {
     margin: auto;
 }
 
+/* clock */
 .js-clock {
     display: flex;
     flex-direction: column;
@@ -37,6 +38,27 @@ body {
     cursor: default;
 }
 
+/* to-do */
+.to-do {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+}
+
+.to-do label {
+    font-size: 1.5em;
+}
+
+.to-do-detail {
+    display: none;
+}
+
+#side-btn {
+    display: none;
+}
+
+/* greeting */
 .js-form > input {
     width: 50%;
     height: 3em;
@@ -80,6 +102,8 @@ body {
 
 }
 
+
+/* weather */
 .weather-zip {
     position: absolute;
     top: 0;
@@ -139,6 +163,7 @@ ul.weather-detail > li {
     padding-top: 0.5em;
 }
 
+/* animation */
 @keyframes fadein {
     from {
         opacity: 0;
@@ -160,6 +185,8 @@ ul.weather-detail > li {
     opacity: 0.8;
 }
 
+
+/* footer */
 footer {
     display: inline-block;
     position: absolute;
@@ -169,6 +196,8 @@ footer {
     cursor: default;
 }
 
+
+/* reset */
 footer .resetShow {
     float: left;
     padding: 1rem;
@@ -229,10 +258,11 @@ footer .resetShow {
     cursor: pointer;
 }
 
+
+/* copyright */
 footer .info {
     float: right;
     padding: 1rem;
     color: #f3f3f3;
     text-shadow: 2px 2px 4px black;
-    font-size: 0.8em;
 }
