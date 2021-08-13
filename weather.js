@@ -30,7 +30,7 @@ function getWeather(lat, lon) {
             }
             saveTemps(res_temps)
             yourplace.innerText = `${place}`
-            menuBtn.innerText = ` 💨`
+            menuBtn.innerText = `💨💨`
         });
 }
 
