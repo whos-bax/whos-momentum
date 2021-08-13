@@ -21,7 +21,7 @@ body {
 
 .js-clock > h1 {
     color: #f3f3f3;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     text-shadow: 2px 2px 6px black;
     margin: auto;
@@ -30,7 +30,7 @@ body {
 
 .js-clock > p {
     color: #f3f3f3;
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 700;
     text-shadow: 2px 2px 10px black;
     margin: auto;
@@ -62,9 +62,10 @@ body {
 
 .js-greetings {
     color: #f3f3f3;
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 500;
     text-shadow: 2px 2px 6px black;
+    margin: 0.5em;
     cursor: default;
 }
 
@@ -75,6 +76,8 @@ body {
 
 .showing {
     display: block;
+    animation: fadein 0.3s linear;
+
 }
 
 .weather-zip {
@@ -83,7 +86,7 @@ body {
     left: 0;
     padding: 1em;
     display: flex;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .js-yourplace {
@@ -187,6 +190,8 @@ footer .resetShow {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
+    
+    animation: fadein 0.3s linear;
 }
 
 .modal-content {
